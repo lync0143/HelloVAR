@@ -2,6 +2,7 @@ package io.krispr.controllers;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,8 +17,9 @@ class HelloControllerTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
-    @Test
+    @Test()
+    @DisplayName("Verify the greeting text")
     void greetingSaysHello() {
-        assertThat(restTemplate.getForObject("http://localhost:" + port, String.class)).contains("Good afternoon");
+        assertThat(restTemplate.getForObject("http://localhost:" + port, String.class)).contains("Good eveningafternoon");
     }
 }
