@@ -18,6 +18,6 @@ class HelloControllerTest {
 
     @Test
     void greetingSaysHello() {
-        assertThat(restTemplate.getForObject("http://localhost:" + port, String.class)).contains("Goodbye");
+        assertThat(restTemplate.getForObject("http://localhost:" + port, String.class)).contains("Hello");
     }
 }
