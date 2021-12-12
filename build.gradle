@@ -18,6 +18,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter:2.6.1'
     implementation 'org.springframework.boot:spring-boot-starter-web:2.6.1'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:2.6.1'
+
+    checkstyle 'com.puppycrawl.tools:checkstyle:9.2'
 }
 
 test {
