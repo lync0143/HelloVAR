@@ -1,1 +1,1 @@
-java -jar build/libs/HelloVAR-1.0-SNAPSHOT.jar
+web: java -jar build/libs/HelloVAR-1.0-SNAPSHOT.jar
