@@ -1,0 +1,1 @@
+java -jar build/libs/HelloVAR-1.0-SNAPSHOT.jar
